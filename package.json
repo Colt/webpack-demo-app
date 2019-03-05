@@ -5,7 +5,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack"
+    "start": "webpack  --config webpack.config.js"
   },
   "keywords": [],
   "author": "",
