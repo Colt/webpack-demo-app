@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <title>Webpack Demo</title>
+  </head>
+  <body class="container">
+    <h1 class="text-center mt-5">
+      Welcome!
+    </h1>
+    <div class="alert alert-danger" id="error" role="alert"></div>
+    <div class="row mt-5">
+      <div class="col">
+        <div class="input-group">
+          <input type="text" id="numberOne" class="form-control" />
+          <div class="input-group-append input-group-prepend">
+            <span class="input-group-text">+</span>
+          </div>
+          <input type="text" id="numberTwo" class="form-control" />
+        </div>
+      </div>
+      <div class="col">
+        <button id="addValues" class="btn btn-primary">Add Values</button>
+      </div>
+    </div>
+    <div class="card mt-5">
+      <div class="card-body">The result is: <span id="result"></span></div>
+    </div>
+    <img src="./assets/webpack.svg" />
+  </body>
+  <script src="./src/app.js"></script>
+</html>
