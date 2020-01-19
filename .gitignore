@@ -6,7 +6,6 @@ dist
 .idea/modules.xml
 .idea/vcs.xml
 .idea/webpack-demo-app.iml
-package-lock.json
 .idea/codeStyles/
 .idea/jsLibraryMappings.xml
 .idea/watcherTasks.xml
