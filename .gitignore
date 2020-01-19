@@ -1,3 +1,9 @@
 .DS_Store
 node_modules
 dist
+.idea/.gitignore
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/webpack-demo-app.iml
+package-lock.json
