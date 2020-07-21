@@ -1,6 +1,6 @@
 const path = require("path");
 const common = require("./webpack.common");
-const merge = require("webpack-merge");
+const { merge } = require("webpack-merge"); //syntax for new version
 const CleanWebpackPlugin = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
