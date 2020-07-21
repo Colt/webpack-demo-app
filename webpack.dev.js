@@ -1,6 +1,6 @@
 const path = require("path");
 const common = require("./webpack.common");
-const merge = require("webpack-merge");
+const { merge } = require("webpack-merge"); //syntax for new version
 var HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = merge(common, {
