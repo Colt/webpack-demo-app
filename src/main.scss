@@ -1,3 +1,224 @@
 $primary: teal;
 $danger: purple;
-@import "~bootstrap/scss/bootstrap";
+body {
+    padding: 0px;
+    margin: 0;
+}
+.wapper {
+    display: flex;
+}
+.header {
+    width: 100%;
+    background-color: #121212;
+}
+.navbar {
+    background-color: black;
+    padding: 10px;
+    width: 250px;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    &__logo{
+        margin: 25px 0px;
+    }
+    &__logo-img{
+        width: 200px;
+    height: 50px;
+    }
+    &__menu{
+        margin-bottom: 25px;
+    }
+    &__menu-list{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    &__list-item-text{
+        margin-left: 10px;
+    }
+    &__menu-link{
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 500;
+        color: rgb(187, 184, 184);
+        transition: all 0.5s ease;
+        display: flex;
+        align-items: center;
+        padding: 10px 20px 10px 20px;
+        box-sizing: border-box;
+    }
+    &__menu-item:hover &__menu-link{
+        color: #fff;
+    }
+    &__menu-item :focus {
+        background-color: rgb(26, 25, 25);
+        border-radius: 5px;
+    }
+    &__list-icon--heart {
+        height: 25px;
+        width: 25px;
+        background: linear-gradient(135deg, #450af5, #c4efd9);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__list-icon--plus {
+        height: 25px;
+        width: 25px;
+        background: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.section {
+    padding: 24px 32px 0px;
+}
+.main-section {
+    height: 300vh;
+    position: relative;
+    &__header {
+        padding: 24px 32px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: sticky;
+        top: 0;
+        right: 0;
+        width: 100%;
+        z-index: 1;
+        box-sizing: border-box;
+    }
+    &__button-next-item {
+        height: 32px;
+        width: 32px;
+        border-radius: 50%;
+        border: none;
+        display: inline-flex;
+        align-items: center;
+        justify-items: center;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        margin-right: 16px;
+    }
+    &__button-right {
+        display: flex;
+        align-items: center;
+    }
+    &__title {
+        position: relative;
+    }
+    &__text {
+        color: #fff;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 36px;
+        letter-spacing: -0.04em;
+        text-transform: none;
+        margin-bottom: 24px;
+    }
+    &__album {
+        display: flex;
+        height: 80px;
+        border-radius: 5px;
+        flex-basis: 32%;
+        margin-bottom: 16px;
+        background-color: #282828;
+    }
+    &__album:hover {
+        background-color: #3c2c2b;
+    } 
+    &__album:hover .album-play{
+        display: block;
+    }
+    &__album-text {
+        padding: 16px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__title-playlist {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+.btn {
+    height: 32px;
+    border-radius: 500px;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-right: 16px;
+    border: none;
+    box-sizing: border-box;
+}
+.btn,
+.main-section__button-next-item,
+.album-play:focus {
+    outline: none;
+}
+.background-gradient {
+    background-image: linear-gradient( #341610, rgba(18, 18, 18, 1));
+    height: 360px;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.img-songca {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px 0px 0px 5px;
+}
+.album-text {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 700;
+    line-height: 24px;
+}
+.album-play {
+    height: 40px;
+    width: 40px;
+    border-radius: 500px;
+    background-color: #1db954;
+    margin-right: 16px;
+    border: none;
+    display: none;
+}
+.album-play:hover {
+    transform: scale(1.05);
+}
+.btn--upgrade-text {
+    color: #fff;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 700;
+    letter-spacing: 1.76px;
+    text-transform: uppercase;
+    padding: 8px 34px;
+}
+.img-info {
+    width: 27px;
+    height: 28px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.btn--info {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding:3px 5px 3px 3px;
+}
+
+.btn--info-text {
+    color: #fff;
+    margin-right: 5px;
+}
+.btn--info:hover {
+    background-color: #363636;
+}
+.btn--upgrade:hover {
+    transform: scale(1.1);
+    background-color: rgba(0, 0, 0, 0.781);
+}
