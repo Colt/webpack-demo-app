@@ -2,71 +2,187 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Webpack Demo</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Document</title>
   </head>
-  <body class="container">
-    <!-- Bootstrap Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#"
-              >Home <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link disabled"
-              href="#"
-              tabindex="-1"
-              aria-disabled="true"
-              >Disabled</a
-            >
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <h1 class="text-center mt-5">
-      Welcome!
-    </h1>
-
-    <div class="alert alert-danger" id="error" role="alert"></div>
-    <div class="row mt-5">
-      <div class="col">
-        <div class="input-group">
-          <input type="text" id="numberOne" class="form-control" />
-          <div class="input-group-append input-group-prepend">
-            <span class="input-group-text">+</span>
+  <body>
+    <div class="wapper">
+      <div class="navbar">
+        <div class="navbar__container">
+          <div class="navbar__logo">
+            <img
+              class="navbar__logo-img"
+              src="img/logoSpotify.svg"
+              alt="logo"
+            />
           </div>
-          <input type="text" id="numberTwo" class="form-control" />
+          <div class="navbar__menu">
+            <ul class="navbar__menu-list">
+              <li class="navbar__menu-item">
+                <a class="navbar__menu-link" href="#">
+                  <img src="img/home.svg" alt="home" />
+                  <span class="navbar__list-item-text">Home</span>
+                </a>
+              </li>
+              <li class="navbar__menu-item">
+                <a class="navbar__menu-link" href="#">
+                  <img src="img/search.svg" alt="search" />
+                  <span class="navbar__list-item-text">Search</span>
+                </a>
+              </li>
+              <li class="navbar__menu-item">
+                <a class="navbar__menu-link" href="#">
+                  <img src="img/library.svg" alt="library" />
+                  <span class="navbar__list-item-text">Your Library</span></a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="navbar__list">
+            <div class="navbar__menu-item">
+              <a class="navbar__menu-link navbar__menu-link--list" href="">
+                <div class="navbar__list-icon--plus">
+                  <img src="img/plus.svg" alt="" />
+                </div>
+                <span class="navbar__list-item-text">Create Playlist</span>
+              </a>
+            </div>
+            <div class="navbar__menu-item">
+              <a class="navbar__menu-link navbar__menu-link--list" href="">
+                <div class="navbar__list-icon--heart">
+                  <img src="img/heart.svg" alt="" />
+                </div>
+                <span class="navbar__list-item-text">Liked Songs</span>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="col">
-        <button id="addValues" class="btn btn-primary">Add Values</button>
+      <div class="header">
+        <div class="main-section ">
+          <div class="main-section__header">
+            <div class="main-section__button-next">
+              <button class="main-section__button-next-item">
+                <img src="img/left.svg" alt="" />
+              </button>
+              <button class="main-section__button-next-item">
+                <img src="img/right.svg" alt="" />
+              </button>
+            </div>
+            <div class="main-section__button-right">
+              <div class="main-section__button-right-btn">
+                <button class="btn btn--upgrade">
+                  <span class="btn--upgrade-text">Upgrade</span>
+                </button>
+              </div>
+              <div class="main-section__button-right-btn">
+                <button class="btn btn--info">
+                  <img class="img-info" src="img/avata.jpg" alt="" />
+                  <span class="btn--info-text">Quang Chiến</span>
+                  <img src="img/down.svg" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="">
+            <div class="background-gradient"></div>
+          <section class="section">
+            <div >
+              <div class="main-section__title">
+                <div class="main-section__text">Good afternoon</div>
+                <div class="main-section__title-playlist">
+                  <div class="main-section__album">
+                    <div class="main-section__album-img">
+                      <img class="img-songca" src="img/songca.jpg" alt="" />
+                    </div>
+                    <div class="main-section__album-text">
+                      <a class="album-text" href=""><p>Song Ca V-Pop</p></a>
+                      <div>
+                        <button class="album-play">
+                          <img src="img/play.svg" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="main-section__album">
+                    <div class="main-section__album-img">
+                      <img class="img-songca" src="img/songca.jpg" alt="" />
+                    </div>
+                    <div class="main-section__album-text">
+                      <a class="album-text" href=""><p>Song Ca V-Pop</p></a>
+                      <div>
+                        <button class="album-play">
+                          <img src="img/play.svg" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="main-section__album">
+                    <div class="main-section__album-img">
+                      <img class="img-songca" src="img/songca.jpg" alt="" />
+                    </div>
+                    <div class="main-section__album-text">
+                      <a class="album-text" href=""><p>Song Ca V-Pop</p></a>
+                      <div>
+                        <button class="album-play">
+                          <img src="img/play.svg" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="main-section__album">
+                    <div class="main-section__album-img">
+                      <img class="img-songca" src="img/songca.jpg" alt="" />
+                    </div>
+                    <div class="main-section__album-text">
+                      <a class="album-text" href=""><p>Song Ca V-Pop</p></a>
+                      <div>
+                        <button class="album-play">
+                          <img src="img/play.svg" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="main-section__album">
+                    <div class="main-section__album-img">
+                      <img class="img-songca" src="img/songca.jpg" alt="" />
+                    </div>
+                    <div class="main-section__album-text">
+                      <a class="album-text" href=""><p>Song Ca V-Pop</p></a>
+                      <div>
+                        <button class="album-play">
+                          <img src="img/play.svg" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="main-section__album">
+                    <div class="main-section__album-img">
+                      <img class="img-songca" src="img/songca.jpg" alt="" />
+                    </div>
+                    <div class="main-section__album-text">
+                      <a class="album-text" href=""><p>Song Ca V-Pop</p></a>
+                      <div>
+                        <button class="album-play">
+                          <img src="img/play.svg" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          </div>
+         </div>
+        </div>
       </div>
     </div>
-    <div class="card mt-5">
-      <div class="card-body">The result is: <span id="result"></span></div>
-    </div>
-    <img src="./assets/webpack.svg" />
   </body>
 </html>
